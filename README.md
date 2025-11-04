@@ -40,7 +40,7 @@ Systemet lagrer informasjon om:
 - Detaljer om gjenstander og lagerbeholdning
 - Brukernes utlånshistorikk
 - Returfrister
-- Roller og tilgangsrettigheter
+- Roller & tilgangsrettigheter
 
 ---
 
