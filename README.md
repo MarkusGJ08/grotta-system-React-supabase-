@@ -2,7 +2,7 @@
 
 ## Oversikt
 
-Grotta er et system designet for å holde oversikt over gjenstander i et lager eller oppbevaringsrom.  
+dette er et system designet for å holde oversikt over gjenstander i et lager eller oppbevaringsrom.  
 Systemet bruker strekkodeskanning for å registrere varer nøyaktig og følge med på hva som tas ut eller settes inn.
 
 ---
