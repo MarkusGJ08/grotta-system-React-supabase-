@@ -1,45 +1,57 @@
-# Grotta Storage Management System
+# Grotta – Lagerstyringssystem
 
-## Overview
+## Oversikt
 
-This is a comprehensive storage management system designed to track items in a storage room. The system utilizes barcode scanning technology to maintain accurate inventory records and monitor item movement.
+Grotta er et system designet for å holde oversikt over gjenstander i et lager eller oppbevaringsrom.  
+Systemet bruker strekkodeskanning for å registrere varer nøyaktig og følge med på hva som tas ut eller settes inn.
 
-## Features
+---
 
-- **Inventory Management**
+## Funksjoner
 
-  - Track items by shelf location
-  - Unique item identification numbers
-  - Barcode scanning support
+### Lagerstyring
 
-- **Item Borrowing System**
+- Holder oversikt over hvor hver gjenstand står (hylleplass)
+- Unike ID-numre for alle gjenstander
+- Støtte for strekkodeskanning
 
-  - Record who borrows items
-  - Track borrowing and return dates
-  - Monitor item status (available/borrowed)
+### Utlånssystem
 
-- **User Management**
-  - Role-based access control
-  - Supported roles:
-    - Admin
-    - Teacher
-    - Student
-    - etc
+- Registrerer hvem som låner hva
+- Holder oversikt over dato for utlån og retur
+- Viser status på gjenstander (tilgjengelig / utlånt)
 
-## Technical Details
+### Brukeradministrasjon
 
-The system maintains records of:
+- Tilgangsstyring basert på roller
+- Støttede roller:
+  - Administrator
+  - Lærer
+  - Elev
+  - (flere legges til senere)
 
-- Item locations (shelf numbers)
-- Item details and inventory
-- User borrowing history
-- Return deadlines
-- User roles and permissions
+---
 
-## Purpose
+## Tekniske detaljer
 
-This system aims to streamline the storage room management process and ensure accountability for borrowed items while maintaining an organized inventory system.
+Systemet lagrer informasjon om:
 
-## Work In Progress
+- Hylleplassering for hver gjenstand
+- Detaljer om gjenstander og lagerbeholdning
+- Brukernes utlånshistorikk
+- Returfrister
+- Roller og tilgangsrettigheter
 
-keep in mind that this is a work in progress, nothing is finnished, and there are some of the listed fetures that are yet to come. but all this will eventually come in the future. :D
+---
+
+## Formål
+
+Målet med Grotta er å gjøre håndteringen av lagringsrommet enklere og mer oversiktlig,  
+samtidig som det sikrer ansvarlighet ved utlån av utstyr og holder et strukturert lagerregister.
+
+---
+
+## Under utvikling
+
+Dette prosjektet er fortsatt under utvikling.  
+Ingenting er helt ferdig ennå, og flere av funksjonene som er nevnt kommer etter hvert. :D
