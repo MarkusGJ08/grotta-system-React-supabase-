@@ -1,0 +1,39 @@
+form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center; /* sentrerer innholdet i form */
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align: center; /* sentrerer teksten i input-felt */
+}
+
+p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  text-align: center; /* sentrerer teksten i p */
+}
+
+p button {
+  background: none;
+  color: #007BFF;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+p button:hover {
+  text-decoration: underline;
+}

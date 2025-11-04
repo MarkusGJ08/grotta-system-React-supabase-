@@ -1,0 +1,67 @@
+.users-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 2rem;
+  background-color: #925050;
+  border-radius: 8px;
+  border: 1px solid #ad4242;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: center; /* sentrerer overskrift og innhold */
+}
+
+.users-container h2 {
+  text-align: center; 
+  margin-bottom: 20px;
+  color: #fff; /* hvit for kontrast mot bakgrunn */
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin: 0 auto; /* sentrerer hele tabellen */
+}
+
+.users-table th,
+.users-table td {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  text-align: center; /* sentrerer all tekst i cellene */
+  color: #000; /* svart tekst */
+}
+
+.users-table th {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.users-table tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+.users-table tr:hover td {
+  background-color: #727272;
+  color: #000; /* hvit tekst på hover */
+}
+
+.users-table tr {
+  transition: background-color 0.3s, color 0.3s;
+}
+.users-table-body {
+  text-align: center; /* sentrerer innholdet i table body */
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin: 0 auto; /* sentrerer hele tabellen */
+}
+.users-table-body td {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  text-align: center; /* sentrerer all tekst i cellene */
+  color: #000; /* svart tekst */
+}
+.users-table-body tr {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  text-align: center; /* sentrerer all tekst i cellene */
+  color: #000; /* svart tekst */
+}
