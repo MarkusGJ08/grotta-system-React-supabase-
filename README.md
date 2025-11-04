@@ -2,7 +2,7 @@
 
 ## Overview
 
-Grotta is a comprehensive storage management system designed to track items in a storage room. The system utilizes barcode scanning technology to maintain accurate inventory records and monitor item movement.
+This is a comprehensive storage management system designed to track items in a storage room. The system utilizes barcode scanning technology to maintain accurate inventory records and monitor item movement.
 
 ## Features
 
