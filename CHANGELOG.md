@@ -5,7 +5,7 @@ Formatet følger _Keep a Changelog_-standarden, og versjonering følger _Semanti
 
 ---
 
-## [0.2.0] – 05-11-2025
+## [0.1.1] – 05-11-2025
 
 ### Nytt
 
