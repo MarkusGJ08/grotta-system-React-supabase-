@@ -1,59 +1,61 @@
-import React, { useEffect, useState } from 'react'
-import { supabase } from './supabaseClient'
-import './Users.css';
+import { useEffect, useState } from "react";
+import supabase from "./supabaseClient"; // importér klienten fra din egen fil
+import "./Users.css";
 
-function Users() {
-  const [users, setUsers] = useState([])
+export default function Users() {
+  const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchUsers() {
+      setLoading(true);
       const { data, error } = await supabase
-        .from('users')
-        .select('id, created_at, name, last_name, phoneNumber, email, rolle')
-        .order('id', { ascending: true })
+        .from("users") // hvis du bruker auth.users, endre til 'auth.users'
+        .select("id, name, email, role, created_at")
+        .order("created_at", { ascending: false });
 
       if (error) {
-        console.error('Error fetching users:', error)
+        console.error("Feil ved henting av brukere:", error.message);
       } else {
-        setUsers(data)
+        setUsers(data);
       }
+      setLoading(false);
     }
-    
-    fetchUsers()
-  }, [])
+
+    fetchUsers();
+  }, []);
+  
+  if (loading) {
+    return <div className="loading">Laster brukere...</div>;
+  }
 
   return (
     <div className="users-container">
-      <h2>Users</h2>
-      <table className="users-table">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Created At</th>
-            <th>Name</th>
-            <th>Last Name</th>
-            <th>Phone</th>
-            <th>Email</th>
-            <th>Role</th>
-          </tr>
-        </thead>
-        <tbody>
-          {users.map(u => (
-            <tr key={u.id}>
-              <td>{u.id}</td>
-              <td>{new Date(u.created_at).toLocaleString()}</td>
-              <td>{u.name}</td>
-              <td>{u.last_name}</td>
-              <td>{u.phoneNumber}</td>
-              <td>{u.email}</td>
-              <td>{u.rolle}</td>
+      <h1>Brukeroversikt</h1>
+      {users.length === 0 ? (
+        <p>Ingen brukere funnet.</p>
+      ) : (
+        <table className="users-table">
+          <thead>
+            <tr>
+              <th>Navn</th>
+              <th>E-post</th>
+              <th>Rolle</th>
+              <th>Opprettet</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
-      <button className="Register-button">Register New Item</button>
+          </thead>
+          <tbody>
+            {users.map((user) => (
+              <tr key={user.id}>
+                <td>{user.name}</td>
+                <td>{user.email}</td>
+                <td>{user.role}</td>
+                <td>{new Date(user.created_at).toLocaleDateString()}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
     </div>
-  )
+  );
 }
-
-export default Users
