@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { supabase } from './supabaseClient'
-import './Users.css'
+import './Users.css';
 
 function Users() {
   const [users, setUsers] = useState([])
@@ -18,7 +18,7 @@ function Users() {
         setUsers(data)
       }
     }
-
+    
     fetchUsers()
   }, [])
 
@@ -37,7 +37,6 @@ function Users() {
             <th>Role</th>
           </tr>
         </thead>
-        <tablebody className="users-table-body">
         <tbody>
           {users.map(u => (
             <tr key={u.id}>
@@ -51,9 +50,8 @@ function Users() {
             </tr>
           ))}
         </tbody>
-        </tablebody>
-        <button className="Register-button">Register New Item</button>
       </table>
+      <button className="Register-button">Register New Item</button>
     </div>
   )
 }
