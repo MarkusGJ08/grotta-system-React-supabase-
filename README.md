@@ -11,14 +11,14 @@ Systemet bruker strekkodeskanning for å registrere varer nøyaktig og følge me
 
 Uten innlogging:
 
-Skann bruker → skann produkt → lån/levering.
-Skann produkt direkte → se status, lån, levering eller forleng.
+- Skann bruker → skann produkt → lån/levering.
+- Skann produkt direkte → se status, lån, levering eller forleng.
 
 Med innlogging (Admin):
 
-Administrere brukere (legge til, slette, filtrere på klasse/år).
-Administrere produkter.
-Behandle flagghendelser (defekt utstyr, manglende strekkoder, merknader, utgåtte lån).
+- Administrere brukere (legge til, slette, filtrere på klasse/år).
+- Administrere produkter.
+- Behandle flagghendelser (defekt utstyr, manglende strekkoder, merknader, utgåtte lån).
 
 ### Lagerstyring
 
