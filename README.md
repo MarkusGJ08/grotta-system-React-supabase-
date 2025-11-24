@@ -12,7 +12,7 @@ Systemet bruker strekkodeskanning for å registrere varer nøyaktig og følge me
 Uten innlogging:
 
 - Skann bruker → skann produkt → lån/levering.
-- Skann produkt direkte → se status, lån, levering eller forleng.
+- Skann produkt direkte → se status, lån, lever ing eller forleng.
 
 Med innlogging (Admin):
 
@@ -39,7 +39,7 @@ Med innlogging (Admin):
   - Administrator
   - Lærer
   - Elev
-  - (flere legges til senere)
+  - (flere legges til senere om nødvendig)
 
 ---
 
