@@ -9,12 +9,12 @@ Systemet bruker strekkodeskanning for å registrere varer nøyaktig og følge me
 
 ### Funksjoner
 
-## Uten innlogging
+Uten innlogging
 
 Skann bruker → skann produkt → lån/levering.
 Skann produkt direkte → se status, lån, levering eller forleng.
 
-## Med innlogging (Admin)
+Med innlogging (Admin)
 
 Administrere brukere (legge til, slette, filtrere på klasse/år).
 Administrere produkter.
