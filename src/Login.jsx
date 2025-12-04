@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import { supabase } from './supabaseClient'
 import './Login.css'
+import { useNavigate } from 'react-router-dom'
 
 function Login() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [message, setMessage] = useState('')
+  const navigate = useNavigate()
 
   const handleLogin = async (e) => {
     e.preventDefault()
@@ -18,6 +20,7 @@ function Login() {
       setMessage(error.message)
     } else {
       setMessage(`Welcome, ${data.user.email}!`)
+      navigate('/users')
     }
   }
 
